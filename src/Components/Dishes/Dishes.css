@@ -1,0 +1,96 @@
+.D-out{
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.D-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.D-menus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.D-menus p{
+    padding: 0 30px;
+    border-right:0.2px solid rgb(0, 0, 0,0.2);
+    cursor: pointer;
+}
+.D-menus p:last-child{
+    border: none;
+}
+
+.D-menus .active{
+    border-bottom: 1px solid rgb(236, 159, 15);
+
+}
+.menu-main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: yellow; */
+}
+.menu-dis{
+    width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 50px;
+}
+
+.card img{
+    width: 100%;
+   height: 400px;
+    margin-bottom: 10px;
+   
+}
+.card{
+    position: relative;
+}
+.card p{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.card .rating{
+    width: 200px;
+    height: 75px;
+}
+.card:hover{
+    box-shadow: 2px 2px 18px 1px rgba(0, 0, 0, 0.2);
+}
+.cartbox{
+    display: none;
+}
+.card:hover .cartbox{
+    display: block;
+    position: absolute;
+    z-index: 999;
+    bottom:25%;
+    right: 120px;
+    animation: pullup 0.5s ;
+}
+.cartbox{
+    border: none;
+    padding: 5px 10px;
+    font-family: sans-serif;
+}
+
+@keyframes pullup {
+    0%{
+        bottom: 20%;
+        opacity: 0.1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+}
+.cartbox:active{
+    border:1px solid black;
+
+}

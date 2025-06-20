@@ -1,0 +1,88 @@
+.navbar{
+    width: 100%;
+    height: 80px;
+    /* background-color: yellowgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 70px ;
+}
+.left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    font-size: 16px;
+}
+.left .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 60px;
+    margin-right: 50px;
+}
+.nav-items ul{
+display: flex;
+align-items: center;
+justify-content: center;
+list-style: none;
+gap: 30px;
+
+}
+.nav-items ul li:hover{
+    cursor: pointer;
+    color: rgb(236, 159, 15);
+    transition: 0.5s;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 25px;
+}
+.nav-right input{
+    width: 350px;
+    padding: 10px;
+    border-radius: 50px;
+   border: 1px solid rgb(0, 0, 0,0.2);
+   position: relative;
+   padding-left: 30px;
+   font-size: 14px;
+}
+.searc{
+    position: absolute;
+    transform: translateX(60px);
+}
+.sear{
+    font-size: 18px;
+}
+.nav-right .icons{
+  margin-right: 10px;
+}
+.nav-right .ch:hover{
+    color: rgb(205,119,82);
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.likes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.likes{
+    position: relative;
+}
+.likes span{
+    position: absolute;
+    top: -16px;
+    left: 15px;
+    padding: 1px 5px;
+    background-color:rgb(205,119,82);
+    border-radius:50%;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
